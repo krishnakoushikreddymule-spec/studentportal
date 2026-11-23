@@ -1,0 +1,224 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #173b66;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #dceafa;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    color: #173b66;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.hero a {
+    display: inline-block;
+    background-color: #245b91;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Main Sections */
+.container {
+    padding: 30px;
+    margin: 20px auto;
+}
+
+section h2 {
+    color: #173b66;
+    margin-bottom: 20px;
+}
+
+/* Events */
+.event-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 220px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+.event-card h3 {
+    color: #245b91;
+    margin-bottom: 10px;
+}
+
+.event-card a {
+    color: #245b91;
+    font-weight: bold;
+}
+
+/* Activities */
+article {
+    margin-bottom: 15px;
+}
+
+#activities article {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Registration Form */
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ccc;
+    max-width: 600px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+}
+
+fieldset {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+fieldset label {
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #245b91;
+}
+
+/* Button */
+button {
+    background-color: #245b91;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #173b66;
+}
+
+/* Aside */
+aside {
+    background-color: #dceafa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #173b66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Keyboard Accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    .event-grid {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+}
